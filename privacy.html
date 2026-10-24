@@ -26,6 +26,9 @@
   <h2>What Google data JARVIS accesses</h2>
   <ul>
     <li><b>Google Drive, Docs and Sheets (read-only):</b> to search and read the owner's files when the owner asks about them.</li>
+    <li><b>Gmail (read-only), only if the owner opts in:</b> to sort the owner's recent email (who needs a reply, what needs
+      doing, which threads are waiting on others) and to read a message when the owner asks about it. JARVIS cannot send,
+      delete or change email with this permission.</li>
     <li><b>Gmail (compose), Google Calendar (events) and Google Sheets (edit), only if the owner opts in:</b> to create a Gmail
       draft, add a calendar event or update a spreadsheet. Each action is shown to the owner first and happens only after
       they approve it. JARVIS never sends email; drafts are sent by the owner from Gmail.</li>
@@ -35,8 +38,8 @@
   <ul>
     <li>Data is used only to answer the owner's own requests.</li>
     <li>The Google sign-in token is stored only on the owner's computer.</li>
-    <li>When the owner asks about a document, its text may be sent to the AI model provider that powers JARVIS (Anthropic)
-      to produce the answer. It is not used for advertising, sold or shared with anyone else.</li>
+    <li>When the owner asks about a document or email, and when recent email is sorted, the relevant text may be sent to
+      the AI model provider that powers JARVIS (Anthropic) to produce the answer. It is not used for advertising, sold or shared with anyone else.</li>
     <li>JARVIS does not keep copies of Google files beyond what the owner chooses to save in their own notes.</li>
   </ul>
 
